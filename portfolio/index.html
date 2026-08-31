@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de Juliana GOUGOU, développeuse web junior spécialisée en HTML5, CSS3, JavaScript, PHP et frameworks modernes.">
+    <meta name="keywords" content="Juliana GOUGOU, développeur web, portfolio, HTML5, CSS3, JavaScript, PHP, Laravel, web developer junior">
+    <meta name="author" content="Juliana GOUGOU">
+    <meta name="theme-color" content="#0F172A">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+    <title>Juliana GOUGOU | Développeur Web Junior</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">
+                <span class="logo-text">J<span class="logo-accent">G</span></span>
+                <span class="logo-full">Juliana GOUGOU</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                    <span class="theme-icon" id="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting animate-fade-up">Bonjour, je suis</span>
+                <h1 class="hero-name animate-fade-up" style="animation-delay: 0.1s">Juliana GOUGOU</h1>
+                <h2 class="hero-title animate-fade-up" style="animation-delay: 0.2s">
+                    <span class="typed-text" id="typed-text"></span>
+                    <span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description animate-fade-up" style="animation-delay: 0.3s">
+                    Je suis une passionnée par le numérique, avec un intérêt particulier pour la création de sites web
+                    et le développement de solutions numériques innovantes. Mon objectif est de participer à des projets
+                    professionnels pour des entreprises.
+                </p>
+                <div class="hero-buttons animate-fade-up" style="animation-delay: 0.4s">
+                    <a href="#projets" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                        </svg>
+                    </a>
+                    <a href="assets/cv/cv-juliana.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+                        <span>Voir mon CV</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-qualities animate-fade-up" style="animation-delay: 0.5s">
+                    <span class="quality-tag">Sérieuse</span>
+                    <span class="quality-tag">Ambitieuse</span>
+                    <span class="quality-tag">Rigoureuse</span>
+                    <span class="quality-tag">Créative</span>
+                    <span class="quality-tag">Esprit d'équipe</span>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-up" style="animation-delay: 0.3s">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        <span></span>
+                    </div>
+                    <img src="images/profile.jpg" alt="Juliana GOUGOU - Développeur Web Junior" class="hero-photo" onerror="this.style.display='none'; this.parentElement.querySelector('.hero-image-placeholder').style.display='flex';">
+                </div>
+                <div class="hero-image-decoration"></div>
+                <div class="hero-image-ring"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section apropos" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Découvrir</span>
+                <h2 class="section-title">À propos <span class="accent">de moi</span></h2>
+            </div>
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <p class="apropos-lead">
+                        Je suis une élève en formation dans le domaine de l'Installation et Maintenance Informatique (IMI),
+                        passionnée par le numérique et particulièrement par le développement web.
+                    </p>
+                    <p>
+                        Je m'intéresse à la création de sites web et je développe progressivement mes compétences
+                        dans différentes technologies. Mon objectif est de continuer à progresser afin de devenir
+                        une développeuse web compétente et de pouvoir participer à des projets professionnels
+                        pour des entreprises.
+                    </p>
+                    <div class="apropos-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Technologies apprises</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Stages effectués</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section competences" id="competences">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Savoir-faire</span>
+                <h2 class="section-title">Mes <span class="accent">compétences</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <span class="skill-badge badge-bon">Bon niveau</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.05s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <span class="skill-badge badge-inter">Intermédiaire</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.1s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/>
+                            <path d="M9 17l3-8 3 8"/>
+                            <path d="M10 14h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.15s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">PHP</h3>
+                    <span class="skill-badge badge-inter">Intermédiaire</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.2s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Laravel</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.25s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.3s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="4"/>
+                            <line x1="1.05" y1="12" x2="7" y2="12"/>
+                            <line x1="17.01" y1="12" x2="22.96" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Git / GitHub</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.35s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Bootstrap</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="animation-delay: 0.4s">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Tailwind CSS</h3>
+                    <span class="skill-badge badge-debutant">Débutant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section projets" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Mes <span class="accent">projets</span></h2>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="html-css-js">HTML/CSS/JS</button>
+                <button class="filter-btn" data-filter="php">PHP</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projet 1: Chez Gero -->
+                <div class="project-card" data-category="html-css-js" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <img src="images/projets/chez-gero.jpg" alt="Chez Gero - Plateforme d'hôtellerie et restauration" onerror="this.style.display='none'; this.parentElement.querySelector('.project-image-placeholder').style.display='flex';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Voir les détails du projet Chez Gero">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-status status-en-cours">En cours</span>
+                        </div>
+                        <h3 class="project-title">Chez Gero</h3>
+                        <p class="project-description">
+                            Site web vitrine développé pour présenter un établissement d'hôtellerie et de restauration.
+                            Comprend les sections accueil, à propos, services, réservation et contact.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2: Bibliothèque -->
+                <div class="project-card" data-category="php" data-aos="fade-up" style="animation-delay: 0.1s">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <img src="images/projets/bibliotheque.jpg" alt="Plateforme de gestion d'une bibliothèque" onerror="this.style.display='none'; this.parentElement.querySelector('.project-image-placeholder').style.display='flex';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Voir les détails du projet Bibliothèque">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-status status-en-cours">En cours</span>
+                        </div>
+                        <h3 class="project-title">Gestion d'une Bibliothèque</h3>
+                        <p class="project-description">
+                            Plateforme de gestion de bibliothèque avec catégories, livres, emprunts et gestion des données.
+                            Projet en cours avec mise en place du CRUD et classes PHP.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Tourisme Bénin -->
+                <div class="project-card" data-category="laravel" data-aos="fade-up" style="animation-delay: 0.2s">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <img src="images/projets/tourisme-benin.jpg" alt="Tourisme et Patrimoine du Bénin" onerror="this.style.display='none'; this.parentElement.querySelector('.project-image-placeholder').style.display='flex';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Voir les détails du projet Tourisme Bénin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-status status-en-cours">En cours</span>
+                        </div>
+                        <h3 class="project-title">Tourisme & Patrimoine du Bénin</h3>
+                        <p class="project-description">
+                            Plateforme de mise en relation entre touristes et guides pour la découverte du patrimoine,
+                            de la culture et du tourisme au Bénin.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Blade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4: E-commerce -->
+                <div class="project-card" data-category="ecommerce" data-aos="fade-up" style="animation-delay: 0.3s">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                                <circle cx="9" cy="21" r="1"/>
+                                <circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                            </svg>
+                        </div>
+                        <img src="images/projets/ecommerce.jpg" alt="Plateforme e-commerce" onerror="this.style.display='none'; this.parentElement.querySelector('.project-image-placeholder').style.display='flex';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Voir les détails du projet E-commerce">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-status status-en-cours">En cours</span>
+                        </div>
+                        <h3 class="project-title">Plateforme E-commerce</h3>
+                        <p class="project-description">
+                            Application web e-commerce destinée à la présentation et la gestion de produits.
+                            Projet en développement avec HTML5, Bootstrap et PHP.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5: Gestion École -->
+                <div class="project-card" data-category="php" data-aos="fade-up" style="animation-delay: 0.4s">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <img src="images/projets/gestion-ecole.jpg" alt="Système de gestion d'une école" onerror="this.style.display='none'; this.parentElement.querySelector('.project-image-placeholder').style.display='flex';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Voir les détails du projet Gestion École">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-status status-a-venir">Projet à venir</span>
+                        </div>
+                        <h3 class="project-title">Système de Gestion d'une École</h3>
+                        <p class="project-description">
+                            Futur projet de développement d'un système de gestion complète pour un établissement scolaire.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">À définir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section parcours" id="parcours">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expérience</span>
+                <h2 class="section-title">Mon <span class="accent">parcours</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014 – 2020</div>
+                        <h3 class="timeline-title">Certificat d'Études Primaires — CEP</h3>
+                        <p class="timeline-description">École Primaire Publique Houègbo-Aliho</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 – 2024</div>
+                        <h3 class="timeline-title">Brevet d'Études du Premier Cycle — BEPC</h3>
+                        <p class="timeline-description">Collège d'Enseignement Général de Houègbo</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 – 2026</div>
+                        <h3 class="timeline-title">Formation en Installation et Maintenance Informatique — IMI</h3>
+                        <p class="timeline-description">Lycée Technique d'Amitié Sino-Béninoise d'Akassato (LT/ASBA)</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot dot-stage"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juin – Août 2025</div>
+                        <span class="timeline-badge">Stage</span>
+                        <h3 class="timeline-title">Stage Académique — CITECH SARL, Calavi</h3>
+                        <ul class="timeline-list">
+                            <li>Intégration HTML5/CSS3/JavaScript</li>
+                            <li>Câblage RJ45</li>
+                            <li>Maintenance informatique</li>
+                            <li>Maintenance des équipements réseau</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 – 2026</div>
+                        <h3 class="timeline-title">Auto-formation — OpenClassrooms</h3>
+                        <p class="timeline-description">Renforcement continu des compétences en développement web et informatique</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot dot-stage"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juin – Août 2026</div>
+                        <span class="timeline-badge">Stage</span>
+                        <h3 class="timeline-title">Stage — CITECH SARL, Calavi</h3>
+                        <ul class="timeline-list">
+                            <li>Initialisation à PHP, MySQL, langage C et algorithme</li>
+                            <li>Réseaux informatiques et câblage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot dot-stage"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juillet – Août 2026</div>
+                        <span class="timeline-badge">Stage</span>
+                        <h3 class="timeline-title">Stage — Cabinet Hood Global, Porto-Novo</h3>
+                        <p class="timeline-description">Stage professionnel dans le cadre de la formation</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot dot-concours"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juillet – Août 2026</div>
+                        <span class="timeline-badge badge-concours">Concours</span>
+                        <h3 class="timeline-title">Participation au PitchLab — Cabinet Hood Global</h3>
+                        <p class="timeline-description">Participation au concours PitchLab organisé par le cabinet Hood Global</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section cv-section" id="cv">
+        <div class="container">
+            <div class="cv-card">
+                <div class="cv-content">
+                    <h2 class="cv-title">Vous souhaitez en savoir plus sur mon parcours ?</h2>
+                    <p class="cv-text">Téléchargez ou consultez mon CV pour découvrir mon parcours complet et mes compétences détaillées.</p>
+                    <a href="assets/cv/cv-juliana.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                        <span>Voir mon CV</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cv-decoration">
+                    <div class="cv-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Message</span>
+                <h2 class="section-title">Me <span class="accent">contacter</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:gougoujuliana@gmail.com">gougoujuliana@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Réseaux sociaux</h3>
+                        <div class="social-icons">
+                            <!-- MODIFIER CES LIENS -->
+                            <a href="https://facebook.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Nom</label>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="message">Message</label>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Envoyer</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                    <div class="form-success" id="form-success">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>Message envoyé avec succès ! Je vous répondrai dès que possible.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">J<span class="logo-accent">G</span></span>
+                    <p>Développeur Web Junior</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Juliana GOUGOU. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
